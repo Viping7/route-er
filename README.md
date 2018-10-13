@@ -1,6 +1,6 @@
 # route-er
 
-A package  that enables you to decouple you routes from controllers and organise all routes in a single place.
+A package that enables you to decouple your routes from controllers and organise all routes in a single place.
 
 ## Version 1.0.0
 

@@ -95,7 +95,7 @@ app.use('/',routeEr.init('byMethod'));
 
 #### setRoutePath(path_of_file)
 
-Accepts the path of file where routes are declared. \
+Accepts the path of file where routes are declared.
 
 Note: Accepts only absolute part, you can use **__dirname** to get it 
 

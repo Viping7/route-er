@@ -1,6 +1,6 @@
 {
   "name": "route-er",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A package that enables you to decouple your routes from controllers and organise all routes in a single place.",
   "main": "index.js",
   "scripts": {
@@ -23,5 +23,5 @@
   "bugs": {
     "url": "https://github.com/Viping7/route-er/issues",
     "email": "vipin.vipin.g498@gmail.com"
-  },
+  }
 }

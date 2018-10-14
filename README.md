@@ -82,7 +82,7 @@ you can decalre sub routes with help of **children** key, it accespts an array o
 
 ```
 var routeEr = require('route-er')
-routerModule.setRoutePath(__dirname + '/route.js'); 
+routeEr.setRoutePath(__dirname + '/route.js'); 
 app.use('/',routeEr.init('byMethod'));
 
 ```

@@ -82,7 +82,7 @@ you can decalre sub routes with help of **children** key, it accespts an array o
 
 ```
 var routeEr = require('route-er')
-routerModule.setRoutePath(__dirname + '/route.js');  // Needed if the file name and location are different 
+routerModule.setRoutePath(__dirname + '/route.js'); 
 app.use('/',routeEr.init('byMethod'));
 
 ```
@@ -95,7 +95,8 @@ app.use('/',routeEr.init('byMethod'));
 
 #### setRoutePath(path_of_file)
 
-Accepts the path of file where routes are declared. 
+Accepts the path of file where routes are declared. \
+
 Note: Accepts only absolute part, you can use **__dirname** to get it 
 
 #### init(type)

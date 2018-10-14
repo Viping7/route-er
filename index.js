@@ -30,8 +30,8 @@ function byMethod() {
     try {
         for (var key in routes) {
             let value = routes[key];
-            value.middleware = value.middleware || [];
             value.forEach(route => {
+                route.middleware = route.middleware || [];
                 var childRoutes = route.children || [];
                 if(childRoutes.length > 0){
                     childRoutes.forEach(childRoute=>{

@@ -39,7 +39,9 @@ function byMethod() {
                         router[key](route.path+childRoute.path,childRoute.middleware,childRoute.controller);
                     })
                 }
-                router[key](route.path, route.middleware, route.controller);
+                if(route.controller){
+                    router[key](route.path, route.middleware, route.controller);
+                }   
             });
         };
         return router;

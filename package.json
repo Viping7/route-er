@@ -1,6 +1,6 @@
 {
   "name": "route-er",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A package that enables you to decouple your routes from controllers and organise all routes in a single place.",
   "main": "index.js",
   "scripts": {

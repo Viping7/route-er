@@ -36,7 +36,14 @@ function byMethod() {
                 if(childRoutes.length > 0){
                     childRoutes.forEach(childRoute=>{
                         childRoute.middleware = childRoute.middleware || [];
-                        router[key](route.path+childRoute.path,childRoute.middleware,childRoute.controller);
+                        let middlewares = [];
+                        middlewares = route.middleware.concat(childRoute.middleware);
+                        if(childRoute.controller){
+                            router[key](route.path+childRoute.path,middlewares,childRoute.controller);
+                        }
+                        else{
+                            throw "No Controller Defined for "+ childRoute.path
+                        }
                     })
                 }
                 if(route.controller){
